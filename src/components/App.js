@@ -104,7 +104,7 @@ class App extends Component {
            <Route path='/about' render={()=><About  {...this.state} {...this.actions}/>} />
          </div>
          {/* Audio Player */}
-         <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2Fmaxvibes%2Fback-in-brazil-02%2F" frameBorder="0" className='db fixed bottom-0 z-5' ref={player=>this.player=player}></iframe>
+         <iframe title='music player' width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2Fmaxvibes%2Fback-in-brazil-02%2F" frameBorder="0" className='db fixed bottom-0 z-5' ref={player=>this.player=player}></iframe>
        </div>
       </div>
       </Router>
