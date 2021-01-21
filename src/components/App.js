@@ -53,7 +53,7 @@ class App extends Component {
     const {mixIds}=this.state
     mixIds.map(async id=>{
       try{
-        const res= await fetch(`https://api.mixcloud.com/${id}`)
+        const res= await fetch(`https://api.mixcloud.com${id}`)
         const data = await res.json()
         this.setState((prev,props)=>({
           mixes:[...prev.mixes, data]
